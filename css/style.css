@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: dodgerblue;
+}
+
+nav {
+    width: 100%;
+    height: 14vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px black solid;
+    background-color: floralwhite;
+}
+
+nav h1{
+    position: relative;
+    left: 1em;
+    font-size: 1.5em;
+}
+
+nav ul{
+    list-style: none;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0.5em;
+    font-size: 1.3em;
+    line-height: 0.5em;
+}
+
+nav ul li a{
+    text-decoration: none;
+}
+
+nav ul li a:hover{
+    color:peru;
+}
+
+#main h2 {
+    margin: 2em auto;
+    padding: 0.5em;
+    text-align: center;
+    font-size: 2em;
+    width: 78%;
+    background-color: floralwhite;
+    border: 2px black solid;
+    border-radius: 7px;
+}
+
+#main #button {
+    font-size: 2em;
+    border-radius: 7px;
+    display: block;
+    margin: auto;
+    width: 50%;
+    border: 2px black solid;
+    background-color: floralwhite;
+    cursor: pointer;
+}
+
+#main #button:hover{
+    background-color:royalblue;
+    color:floralwhite;
+}
+
+/*MEDIA QUERIES*/
+
+/*Moble site*/
+@media screen and (min-width: 480px){
+    
+    nav h1 {
+        left: -2em;
+    }
+
+    #main h2{
+        margin-bottom: 1em;
+    }
+
+}
+
+/*Tablet site*/
+@media screen and (min-width: 600px){
+    nav{
+        height: 7vh;
+    }
+
+    nav h1{
+        font-size: 2em;
+    }
+
+    nav ul li{
+        font-size: 1.5em;
+    }
+
+    #main{
+        margin: 14em auto;
+    }
+}
+
+/*Desktop*/
+@media screen and ( min-width:  1024px){
+    nav{
+        height: 13vh;
+    }
+
+    nav h1 {
+        font-size: 3em;
+    }
+
+    #main{
+        width: 100%;
+        height: 10vh;
+        margin: 10em auto;
+    }
+}
